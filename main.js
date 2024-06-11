@@ -42,3 +42,15 @@ while(i!=givenNum){
     i=prompt("Give the correct number: ");
 }
 console.log("Congratulations1")
+
+//Harj 5
+let opiskelija={
+    nimi:"Mahin",
+    taso: "A2",
+    koulu: "Taitotalo",
+    tavoite:"B1",
+}
+let out=`Hän on uusi opiskelija nimi on ${opiskelija.nimi}`
+console.log(out);
+out=out.toUpperCase(); //sama toLowerCase tai toTrim
+console.log(out);
