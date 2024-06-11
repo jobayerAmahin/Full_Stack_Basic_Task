@@ -54,3 +54,6 @@ let out=`Hän on uusi opiskelija nimi on ${opiskelija.nimi}`
 console.log(out);
 out=out.toUpperCase(); //sama toLowerCase tai toTrim
 console.log(out);
+
+let käyttäjätunnus= "@"+opiskelija.nimi+ out.length;
+console.log("Hänen käyttäjätunnus on ", käyttäjätunnus);
