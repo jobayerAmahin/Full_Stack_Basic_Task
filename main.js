@@ -13,3 +13,14 @@ const instaUser= {
 };
 console.log(product);
 
+let inp=prompt("Input a number: ");
+let grade;
+
+if(80<=inp<=100){
+    grade="Pass With High";
+}else if(40<=inp<=79){
+    grade="Pass With Medium";
+}else{
+    grade="Fail";
+}
+console.log("Your grade is: ", grade);
