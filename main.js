@@ -57,3 +57,13 @@ console.log(out);
 
 let käyttäjätunnus= "@"+opiskelija.nimi+ out.length;
 console.log("Hänen käyttäjätunnus on ", käyttäjätunnus);
+
+//Harj 6
+
+let hinta=[110,220,330,440,550,660,770,880,990];
+
+for(let val in hinta){
+    hinta[val]=hinta[val]-(hinta[val]*0.1);
+    console.log(hinta[val])
+}
+console.log(hinta)
