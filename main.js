@@ -68,3 +68,12 @@ for(let val in hinta){
 }
 console.log(hinta)
 
+//Harj 7
+
+let yritys=["abb", "vtt", "trr", "kone", "keosera"];
+
+yritys.shift();
+yritys.pop();
+
+yritys.splice(2,1,"lahitaksi");
+console.log(yritys);
