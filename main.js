@@ -77,3 +77,26 @@ yritys.pop();
 
 yritys.splice(2,1,"lahitaksi");
 console.log(yritys);
+
+//Hatj 8
+
+let mulFun=(a,b)=>{
+    m=a*b;
+    return m;
+}
+console.log(mulFun(3,4));
+
+const prt=()=>{
+    console.log("Blank parantheses");
+}
+
+function isVowel(str){
+    let ct=0;
+    for (let val in str){
+        if (val==="a"|| val==="e"|| val==="i"|| val==="o"|| val==="u"){
+            ct++;
+        }
+    }
+    console.log(ct);
+}
+isVowel("oscar");
