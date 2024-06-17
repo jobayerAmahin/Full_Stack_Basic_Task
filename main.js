@@ -90,7 +90,7 @@ const prt=()=>{
     console.log("Blank parantheses");
 }
 
-function isVowel(str){
+function isVowel(str){ //Ei toimi
     let ct=0;
     for (let val in str){
         if (val==="a"|| val==="e"|| val==="i"|| val==="o"|| val==="u"){
@@ -100,3 +100,24 @@ function isVowel(str){
     console.log(ct);
 }
 isVowel("oscar");
+
+//Harj 9
+ikaiset=[9,10,11,12,15];
+ikaiset.forEach((val) => {
+    console.log(val**2);
+});
+
+let uusiIka=ikaiset.map((val)=>{
+    return val+1;
+});
+console.log(uusiIka);
+
+let eriIka1=ikaiset.filter((val)=>{
+    return val>10;
+});
+console.log(eriIka1);
+
+let eriIka2=ikaiset.reduce((prev,curr)=>{
+    return prev>curr?prev:curr;
+});
+console.log(eriIka2);
