@@ -121,3 +121,16 @@ let eriIka2=ikaiset.reduce((prev,curr)=>{
     return prev>curr?prev:curr;
 });
 console.log(eriIka2);
+
+//Harj 10
+
+let n=prompt("Anna Numero: ");
+let arr=[];
+for (let i=1;i<=n;i++){
+    arr[i-1]=i;
+}
+console.log(arr);
+let uusiArr=arr.reduce((prev,curr)=>{
+    return prev+curr;
+})
+console.log(uusiArr);
