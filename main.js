@@ -134,3 +134,8 @@ let uusiArr=arr.reduce((prev,curr)=>{
     return prev+curr;
 })
 console.log(uusiArr);
+
+//Harj 11
+
+let domTest= document.querySelector("div");
+console.dir(domTest);
