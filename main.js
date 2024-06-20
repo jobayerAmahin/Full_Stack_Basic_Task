@@ -139,3 +139,20 @@ console.log(uusiArr);
 
 let domTest= document.querySelector("div");
 console.dir(domTest);
+
+let uLau1=document.querySelector("h1");
+uLau1.innerText=uLau1.innerText+"- Luokka Numero 7";
+
+let divs=document.querySelectorAll(".wd");
+divs[0].innerText="Jim 15";
+divs[1].innerText="Fahad 25";
+divs[2].innerText="Tauhid 03";
+divs[3].innerText="Siam 105";
+
+let idx=0;
+for(div of divs){
+    div.innerText=div.innerText+`myös ${idx}`;
+    idx++;
+}
+
+
