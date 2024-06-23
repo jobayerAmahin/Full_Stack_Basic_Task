@@ -155,4 +155,9 @@ for(div of divs){
     idx++;
 }
 
+//Harj 12
+let att=document.querySelector("p");
+let attN=att.getAttribute("id");
+console.log(attN);
+
 
