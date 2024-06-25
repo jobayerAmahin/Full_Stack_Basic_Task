@@ -171,3 +171,7 @@ but.append(newBut); //node.append(el);inside
                     //node.prepend(el);inside
                     //node.before(el);outside
                     //node.after(el);outside
+newBut.style.backgroundColor="red";
+newBut.style.color="green";
+
+document.querySelector("h3").classList.add("butCol");
