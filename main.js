@@ -161,3 +161,13 @@ let attN=att.getAttribute("id");
 console.log(attN);
 console.log(att.setAttribute("id","newID"));
 
+console.log(divs.style);
+
+//Harj 13
+let newBut=document.createElement("button");
+newBut.innerHTML="Click";
+let but=document.querySelector("div");
+but.append(newBut); //node.append(el);inside
+                    //node.prepend(el);inside
+                    //node.before(el);outside
+                    //node.after(el);outside
