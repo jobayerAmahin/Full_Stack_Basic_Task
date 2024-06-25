@@ -159,5 +159,5 @@ for(div of divs){
 let att=document.querySelector("p");
 let attN=att.getAttribute("id");
 console.log(attN);
-
+console.log(att.setAttribute("id","newID"));
 
