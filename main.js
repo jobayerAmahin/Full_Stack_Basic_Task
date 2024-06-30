@@ -175,3 +175,10 @@ newBut.style.backgroundColor="red";
 newBut.style.color="green";
 
 document.querySelector("h3").classList.add("butCol");
+
+//Harj 14 (Event)
+
+let btn1=document.querySelector("#btn1");
+btn1.onclick=()=>{
+    console.log("Button is clicked!");
+}
