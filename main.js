@@ -141,7 +141,7 @@ let domTest= document.querySelector("div");
 console.dir(domTest);
 
 let uLau1=document.querySelector("h1");
-uLau1.innerText=uLau1.innerText+"- Luokka Numero 7";
+uLau1.innerText=uLau1.innerText+"Luokka Numero 7";
 
 let divs=document.querySelectorAll(".wd");
 divs[0].innerText="Jim 15";
@@ -181,4 +181,44 @@ document.querySelector("h3").classList.add("butCol");
 let btn1=document.querySelector("#btn1");
 btn1.onclick=()=>{
     console.log("Button is clicked!");
-}
+};
+btn1.onclick=(evt)=>{
+    console.log(evt.type);
+    console.log(evt.target);
+};
+
+//Harj 15 (Event Listener)
+
+let btn2=document.querySelector("#btn2");
+btn2.addEventListener("click",()=>{
+    console.log("Button is clicked 1");
+});
+btn2.addEventListener("click",()=>{
+    console.log("Button is clicked 2");
+});
+
+const handler3=()=>{
+    console.log("Button is clicked 3");
+};
+btn2.addEventListener("click",handler3);
+btn2.removeEventListener("click",handler3);
+
+//Harj 16(Event Listener Exercise)(Ongelmia Tässä, katso video 7:45)
+
+let formDiv=document.querySelector("#formDiv");
+let btn3=document.querySelector("#mode");
+let modeV="light";
+btn3.addEventListener("click",()=>{
+    if(modeV==="light"){
+        modeV="dark";
+        formDiv.classList.add("dark");
+        formDiv.classList.remove("light");
+    }else{
+        modeV="light";
+        formDiv.classList.add("light");
+        formDiv.classList.remove("dark");
+    }
+    console.log(modeV);
+});
+
+

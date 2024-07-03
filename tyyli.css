@@ -1,0 +1,27 @@
+*{
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.blog{
+    border: 10px solid yellowgreen;
+    background-color: azure;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin: 10px; /*20px 40px(TB,LR) and 20px 40px 80px(T LR B) and 20px 40px 60px 80px(T R B L)*/
+    padding: 5px 45px;/*T B L R sama kuin margin*/
+    box-shadow: 5px 5px gray;
+}
+#visib{
+    /*display: none;*/
+    visibility: hidden;
+}
+#cover{
+    height: 300px;
+    background-image: url('../Full_Stack_Basic_Task/kuvat/tori.jpg');
+    background-size: 500px;
+}
+#inblock{
+    display: block;
+    border: 10px solid black;
+    height: 50px;
+}

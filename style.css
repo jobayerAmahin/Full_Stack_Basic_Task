@@ -23,3 +23,9 @@ body{
 .butCol{
     background-color: burlywood;
 }
+.dark{
+    background-color: rgb(62, 62, 62);
+}
+.light{
+    background-color: antiquewhite;
+}
