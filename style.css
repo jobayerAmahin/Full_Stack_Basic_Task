@@ -29,3 +29,7 @@ body{
 .light{
     background-color: antiquewhite;
 }
+form{
+    text-align: center;
+    height: 900px;
+}
