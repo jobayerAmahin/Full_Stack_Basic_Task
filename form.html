@@ -1,35 +1,74 @@
- <link rel="stylesheet" href="style.css">
  <!DOCTYPE html>
  <html lang="en">
  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lomake</title>
+    <style>
+        label{
+            display: block;
+            margin: 5px;
+            padding: 5px;
+            
+            font-size: 20px;
+        }
+        input{
+            margin-left: 30px;
+            border-width: 2px;
+            font-size: 20px;
+            padding: 10px;
+        }
+        legend{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: x-large;
+            font-weight: bolder;
+        }
+    </style>
  </head>
  <body>
     <div id="formDiv">   
-        <h3>Anna Info tänne</h3>
+        <header><h1>Fill Your Job Interest</h1></header>
+        
         <button id="mode">View Mode</button>
-        <form action="">
-            <input type="text" name="Text" id="">
-            <br>
-            <br>
-            <input type="password" name="Password" id="">
-            <br>
-            <br>
-            <input type="datetime" name="Birthdate" id="">
-            <br>
-            <br>
-            <input type="email" name="Email" id="">
-            <br>
-            <br>
-            <input type="file" name="Upload CV" id="">
-            <br>
-            <br>
+        <main>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="">First Name<input type="text" name="" id=""></label>
+                <label for="">Last Name<input type="text" name="" id=""></label>
+                <label for="">Email<input type="email" name="" id=""></label>
+                <label for="">Birthdate<input type="datetime" name="" id=""></label>
+                <label for="">Phone Number<input type="number" name="" id=""></label>
+                <label for="">Address<input type="text" name="" id=""></label>
+            </fieldset>
+            <fieldset>
+                <legend>Residency Purpose</legend>
+                <label for="">Student <input type="radio" name="purpose"></label>
+                <label for="">Work <input type="radio" name="purpose"></label>
+                <label for="">Spouse <input type="radio" name="purpose"></label>
+                <label for="">Other <input type="radio" name="purpose"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Area of Interest</legend>
+                <label for="">Logistics <input type="checkbox" name="" id=""></label>
+                <label for="">Construction <input type="checkbox" name="" id=""></label>
+                <label for="">Information Technology <input type="checkbox" name="" id=""></label>
+                <label for="">Restaurant <input type="checkbox" name="" id=""></label>
+                <label for="">Cleaning <input type="checkbox" name="" id=""></label>
+                <label for="">Stuff Delivery <input type="checkbox" name="" id=""></label>
+                <label for="">Taxi Service<input type="checkbox" name="" id=""></label>
+                <label for="">Food Delivery <input type="checkbox" name="" id=""></label>
+            </fieldset>
+            <fieldset>
+                <legend>Work Experience</legend>
+                <label for="">Write briefly about your work experience <input type="text" name="" id="" style="height: 300px;width: 800px;"></label>
+            </fieldset>
+            <input type="reset" value="Reset">
             <input type="submit" value="Submit">
-        </form>
+        </main>
+        
     </div>
-    <script src="main.js"></script>
+
+    
  </body>
  </html>
  
