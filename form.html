@@ -9,7 +9,7 @@
             display: block;
             margin: 5px;
             padding: 5px;
-            
+            width: 400px;
             font-size: 20px;
         }
         input{
@@ -17,12 +17,23 @@
             border-width: 2px;
             font-size: 20px;
             padding: 10px;
+            width: 200px;
         }
         legend{
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: x-large;
             font-weight: bolder;
         }
+        .legends>input{
+            margin-left: 150px;
+        }
+        .inputF{
+            border: 2px solid red;
+            display: flex;
+            padding: 5px 0;
+        }
+       
+        
     </style>
  </head>
  <body>
@@ -31,8 +42,17 @@
         
         <button id="mode">View Mode</button>
         <main>
-            <fieldset>
+            <fieldset class="legends">
                 <legend>Personal Information</legend>
+                <div class="inputF">
+                    <label for="">First Name</label>
+                    <input type="text" name="" id="">
+                </div>
+                <div class="inputF">
+                    <label for="">Last Name</label>
+                    <input type="text" name="" id="">
+                </div>
+
                 <label for="">First Name<input type="text" name="" id=""></label>
                 <label for="">Last Name<input type="text" name="" id=""></label>
                 <label for="">Email<input type="email" name="" id=""></label>
