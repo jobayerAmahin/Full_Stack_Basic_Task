@@ -25,6 +25,8 @@
     border: 10px solid black;
     height: 50px;
 }
+
+/*CSS positions and Z index*/
 section{
     margin: 0 auto;
     background-image: linear-gradient(45deg, yellow, white);
@@ -57,3 +59,119 @@ section{
     position: absolute;
     bottom: 60px;
 }
+#img3{
+    position: sticky;
+    top: 2px;
+}
+.secZindex{
+    padding-top: 30px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid red;
+    background-color: burlywood;
+}
+#imgA{
+    z-index: 3;
+    left: 460px;
+    position: absolute;
+}
+#imgB{
+    z-index: 2;
+    left: 480px;
+    position: absolute;
+}
+#imgC{
+    z-index: 1;
+    left: 500px;
+    position: absolute;
+}
+#imgD{
+    left: 520px;
+    position: absolute;
+}
+
+/*Pseudo Elements*/
+h2:hover{
+    background-color: aqua;
+}
+h2::after{
+    content: '.pdf';
+    color: brown;
+}
+h2::first-letter{
+    color: blueviolet;
+    font-size: 3em;
+}
+a:visited{
+    color: gray;
+}
+li{
+    list-style: none;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+/*Nth Child*/
+li:nth-child(2n){
+    background-color: cadetblue;
+}
+
+/*Grid and Flex*/
+.calender{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    row-gap: 10px;
+    column-gap: 20px;
+}
+.date{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    
+    height: 50px;
+    width: 50px;
+    background-color: lightsalmon;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+.day{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  
+    height: 50px;
+    width: 50px;
+    background-color: aqua;
+    border-radius: 10px;
+}
+
+/*CSS Media Query*/
+.mediaQuery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 10px;
+}
+.imgBulk{
+    border: 2px solid black;
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width:855px) {
+    .mediaQuery{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media screen and (max-width:992px) and (min-width:576px){
+    .mediaQuery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
